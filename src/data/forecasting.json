@@ -1,0 +1,31 @@
+{
+    "forecasting": [
+      {
+        "product_id": "P001",
+        "name": "Product X",
+        "historical_sales": [
+          { "date": "2024-08-01", "quantity": 150 },
+          { "date": "2024-08-15", "quantity": 170 },
+          { "date": "2024-09-01", "quantity": 160 }
+        ],
+        "forecasted_demand": [
+          { "date": "2024-09-15", "quantity": 180 },
+          { "date": "2024-10-01", "quantity": 200 }
+        ]
+      },
+      {
+        "product_id": "P002",
+        "name": "Product Y",
+        "historical_sales": [
+          { "date": "2024-08-01", "quantity": 80 },
+          { "date": "2024-08-15", "quantity": 90 },
+          { "date": "2024-09-01", "quantity": 85 }
+        ],
+        "forecasted_demand": [
+          { "date": "2024-09-15", "quantity": 95 },
+          { "date": "2024-10-01", "quantity": 100 }
+        ]
+      }
+    ]
+  }
+  

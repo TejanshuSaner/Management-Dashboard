@@ -1,0 +1,10 @@
+{
+    "performance_metrics": {
+      "order_fulfillment_rate": 92,
+      "average_lead_time": 3.5, 
+      "cost_of_goods_sold": 12000, 
+      "inventory_turnover_rate": 5, 
+      "customer_satisfaction_score": 88
+    }
+  }
+  

@@ -1,0 +1,25 @@
+{
+    "shipments": [
+      {
+        "shipment_id": "SH12345",
+        "product_id": "P001",
+        "product_name": "Product X",
+        "carrier": "Carrier A",
+        "status": "In Transit",
+        "current_location": "City X",
+        "estimated_delivery": "2024-09-10",
+        "last_updated": "2024-09-08T10:00:00Z"
+      },
+      {
+        "shipment_id": "SH12346",
+        "product_id": "P002",
+        "product_name": "Product Y",
+        "carrier": "Carrier B",
+        "status": "Delivered",
+        "current_location": "City Y",
+        "estimated_delivery": "2024-09-07",
+        "last_updated": "2024-09-08T10:00:00Z"
+      }
+    ]
+  }
+  

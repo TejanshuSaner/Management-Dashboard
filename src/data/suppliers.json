@@ -1,0 +1,23 @@
+{
+    "suppliers": [
+      {
+        "supplier_id": "S001",
+        "name": "Supplier A",
+        "products_supplied": ["P001", "P003"],
+        "orders_fulfilled": 150,
+        "on_time_delivery_rate": 95,
+        "order_accuracy_rate": 97,
+        "last_updated": "2024-09-08T10:00:00Z"
+      },
+      {
+        "supplier_id": "S002",
+        "name": "Supplier B",
+        "products_supplied": ["P002"],
+        "orders_fulfilled": 120,
+        "on_time_delivery_rate": 90,
+        "order_accuracy_rate": 92,
+        "last_updated": "2024-09-08T10:00:00Z"
+      }
+    ]
+  }
+  

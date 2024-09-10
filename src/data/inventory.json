@@ -1,0 +1,50 @@
+{
+    "inventory": [
+      {
+        "product_id": "P001",
+        "name": "Product X",
+        "categories": "Mobile",
+        "warehouses": [
+          {
+            "warehouse_id": "W001",
+            "location": "Warehouse A",
+            "quantity": 120,
+            "last_updated": "2024-09-08T10:00:00Z"
+          },
+          {
+            "warehouse_id": "W002",
+            "location": "Warehouse B",
+            "quantity": 60,
+            "last_updated": "2024-09-08T10:00:00Z"
+          }
+        ]
+      },
+      {
+        "product_id": "P002",
+        "name": "Product Y",
+        "categories":  "Accessories",
+        "warehouses": [
+          {
+            "warehouse_id": "W001",
+            "location": "Warehouse A",
+            "quantity": 75,
+            "last_updated": "2024-09-08T10:00:00Z"
+          }
+        ]
+      },
+      {
+        "product_id": "P003",
+        "name": "Product Z",
+        "categories":  "Kitchen",
+        "warehouses": [
+          {
+            "warehouse_id": "W002",
+            "location": "Warehouse B",
+            "quantity": 90,
+            "last_updated": "2024-09-08T10:00:00Z"
+          }
+        ]
+      }
+    ]
+  }
+  
