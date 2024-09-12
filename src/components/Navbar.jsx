@@ -4,11 +4,11 @@ import Logo from '../assets/logo.svg'
 
 const Navbar = () => {
   return (
-    <div className='w-full justify-between h-[8vh] bg-blue-600 flex p-3 text-center  '>
-      <img className='font-extrabold text-black ' src={Logo} alt="" />
+    <div className='w-full justify-between h-[10vh] bg-blue-600 flex p-4 text-center  '>
+      <h2 className='credit text-2xl font-bold' >Tejanshu</h2>
    
    <h2 className='headline text-2xl font-semibold'>Management Dashboard</h2>
-   <h2 className='credit text-2xl font-bold' >Tejaanshu</h2>
+  <button className='bg-white p-1 border-none rounded-lg font-bold text-center'>Download</button>
     </div>
   )
 }

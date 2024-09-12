@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Pie } from 'react-chartjs-2'; // Change to Pie from Doughnut
+import { Pie } from 'react-chartjs-2'; 
 import Inventory from '../../data/inventory.json';
 import {
   Chart as ChartJS,
@@ -9,7 +9,7 @@ import {
   Legend
 } from 'chart.js';
 
-// Register the required components for Chart.js
+
 ChartJS.register(
   ArcElement,
   Title,
@@ -20,14 +20,14 @@ ChartJS.register(
 const Sales = () => {
   const [sales, setSales] = useState(null);
 
-  // Implementing Data
+ 
   useEffect(() => {
     setSales(Inventory);
   }, []);
 
   if (!sales) return <div className="text-white">Loading...</div>;
 
-  // Get total quantity of products across all warehouses
+ 
   const totalQuantities = sales.inventory.map(item => {
     return item.warehouses.reduce((total, warehouse) => total + warehouse.quantity, 0);
   });
@@ -45,7 +45,7 @@ const Sales = () => {
       'rgb(255, 205, 86)'
       ],
       borderColor: [
-        '#ffff' // Black border for contrast
+        '#ffff' 
       ],
       borderWidth: 0.50, 
       hoverOffset: 4
@@ -57,16 +57,15 @@ const Sales = () => {
     plugins: {
       legend: {
         labels: {
-          color: '#000', // Light grey for legend text
+          color: '#000',
           font: {
-            size: 10   // Font size for legend
+            size: 12  
           }
         }
       },
-      tooltip: {
-        backgroundColor: '#333333', // Dark background for tooltip
-        titleColor: '#000', // White title color
-        bodyColor: '#F0F0F0', // Light grey body color
+      tooltip: { 
+        titleColor: '#000',
+        bodyColor: '#F0F0F0', 
         callbacks: {
           label: function(tooltipItem) {
             return `${tooltipItem.label}: ${tooltipItem.raw}`;
@@ -76,15 +75,15 @@ const Sales = () => {
       title: {
         display: true,
         text: `Total Product: ${totalSales}`,
-        color: '#000', // Black title color
+        color: '#000', 
         font: {
-          size: 10 // Font size for title
+          size: 14 
         }
       }
     },
     elements: {
       arc: {
-        borderWidth: 1 // Border width for pie segments
+        borderWidth: 1 
       }
     }
   };

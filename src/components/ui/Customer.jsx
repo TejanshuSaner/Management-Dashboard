@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Doughnut } from 'react-chartjs-2'; // Assuming you're using Doughnut or Pie chart
+import { Doughnut } from 'react-chartjs-2'; 
 import performance from '../../data/performance_metrics.json';
 import {
   Chart as ChartJS,
@@ -9,7 +9,7 @@ import {
   Legend
 } from 'chart.js';
 
-// Register the required components for Chart.js
+
 ChartJS.register(
   ArcElement,
   Title,
@@ -26,7 +26,7 @@ const Customer = () => {
 
   if (!customer) return <div>Loading...</div>;
 
-  // Calculate fulfillment rate and unfulfilled percentage
+
   const fulfillmentRate = customer.performance_metrics.order_fulfillment_rate;
   const unfulfillmentRate = 100 - fulfillmentRate;
 
@@ -34,10 +34,10 @@ const Customer = () => {
     labels: ['Unfulfillment', 'Fulfillment'],
     datasets: [{
       label: 'Fulfillment Rate',
-      data: [unfulfillmentRate, fulfillmentRate], // Ensure it's an array of numbers
+      data: [unfulfillmentRate, fulfillmentRate], 
       backgroundColor: [
-        'white', // Color for Unfulfillment
-        '#6B21A8'  // Color for Fulfillment
+        'white', 
+        '#6B21A8'  
       ],
       hoverOffset: 4
     }]

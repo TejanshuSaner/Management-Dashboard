@@ -11,7 +11,7 @@ import {
   Legend
 } from 'chart.js';
 
-// Register components for the bar chart
+
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 const Warehouse = () => {
@@ -23,7 +23,7 @@ const Warehouse = () => {
 
   if (!warehousedata) return <div className="text-white">Loading...</div>;
 
-  // Dynamically generate chart data based on the inventory data
+  
   const labels = warehousedata.inventory.flatMap(item => 
     item.warehouses.map(warehouse => warehouse.location)
   );
@@ -33,17 +33,17 @@ const Warehouse = () => {
   );
 
   const data = {
-    labels, // Labels for the X-axis (locations of the warehouses)
+    labels, 
     datasets: [{
       label: 'Stock Quantity',
-      data: quantities, // Quantities corresponding to each warehouse
+      data: quantities, 
       backgroundColor: [
         'rgba(255, 99, 132, 0.4)',
         'rgba(255, 159, 64, 0.5)',
         'rgba(255, 205, 86, 0.6)',
         'rgba(75, 192, 192, 0.6)',
         'rgba(54, 162, 235, 0.2)',
-        'rgba(153, 102, 255, 0.2)',  // Vibrant Pink
+        'rgba(153, 102, 255, 0.2)',  
       ],
       borderColor: [
         'rgb(255, 99, 132)',

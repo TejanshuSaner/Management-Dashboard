@@ -5,7 +5,7 @@ const Status = () => {
   const [shipments, setShipments] = useState(null);
 
   useEffect(() => {
-    setShipments(Shipment.shipments); // Access the shipments array
+    setShipments(Shipment.shipments); 
   }, []);
 
   if (!shipments) return <div>Loading...</div>;
